@@ -32,9 +32,11 @@ public class Ex2 {
                 Integer value = entry.getValue();
                 if (value == max) {
                     System.out.println("Наибольшее число повторений: " + entry.getKey() + "=" + entry.getValue());
-                } else {
-                    System.out.println("Наибольшее число повторений: " + Collections.max(statistics.entrySet(), Comparator.comparing(Map.Entry::getValue)));
-                } }
+//                } else {
+//                    System.out.println("Наибольшее число повторений: " + max);
+//                } }
+                }
+            }
 
                     //System.out.println("Max: " + max);
                     //System.out.println("Наибольшее число повторений: " + Collections.max(statistics.entrySet(), Comparator.comparing(Map.Entry::getValue)));
