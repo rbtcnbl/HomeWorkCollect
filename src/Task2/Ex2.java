@@ -27,21 +27,14 @@ public class Ex2 {
 //                if (count >= max) {
 //                    max = count;
 //                }
-//                for (Map.Entry<String, Integer> entry : statistics.entrySet()) {
-//                    Integer value = entry.getValue();
-//                    if (value == max) {
-            // System.out.println("Наибольшее число повторений: " +    );
-//                    } else {
-            System.out.println("Наибольшее число повторений: " + Collections.max(statistics.entrySet(), Comparator.comparing(Map.Entry::getValue)));
+
+                    //System.out.println("Max: " + max);
+                    //System.out.println("Наибольшее число повторений: " + Collections.max(statistics.entrySet(), Comparator.comparing(Map.Entry::getValue)));
 
 
-            //System.out.println("Max: " + max);
-            //System.out.println("Наибольшее число повторений: " + Collections.max(statistics.entrySet(), Comparator.comparing(Map.Entry::getValue)));
+                } catch(FileNotFoundException sc){
+                    System.out.println("File Not found");
+                }
 
-
-        } catch (FileNotFoundException sc) {
-            System.out.println("File Not found");
+            }
         }
-
-    }
-}
