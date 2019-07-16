@@ -27,6 +27,14 @@ public class Ex2 {
 //                if (count >= max) {
 //                    max = count;
 //                }
+            int max = Collections.max(statistics.values());
+            for (Map.Entry<String, Integer> entry : statistics.entrySet()) {
+                Integer value = entry.getValue();
+                if (value == max) {
+                    System.out.println("Наибольшее число повторений: " + entry.getKey() + "=" + entry.getValue());
+                } else {
+                    System.out.println("Наибольшее число повторений: " + Collections.max(statistics.entrySet(), Comparator.comparing(Map.Entry::getValue)));
+                } }
 
                     //System.out.println("Max: " + max);
                     //System.out.println("Наибольшее число повторений: " + Collections.max(statistics.entrySet(), Comparator.comparing(Map.Entry::getValue)));
